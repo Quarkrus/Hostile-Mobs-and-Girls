@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:dyssomnia"
+    "types": [
+      "hmag:dyssomnia"
+    ]
   },
   "result": "minecraft:phantom_membrane"
 }

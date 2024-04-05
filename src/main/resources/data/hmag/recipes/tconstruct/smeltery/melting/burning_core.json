@@ -10,8 +10,8 @@
     "item": "hmag:burning_core"
   },
   "result": {
-    "fluid": "tconstruct:magma",
-    "amount": 1000
+    "amount": 1000,
+    "fluid": "tconstruct:magma"
   },
   "temperature": 300,
   "time": 127

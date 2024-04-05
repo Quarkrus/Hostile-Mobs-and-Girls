@@ -63,14 +63,6 @@
       "required": false
     },
     {
-      "id": "meadow:meadow_forest",
-      "required": false
-    },
-    {
-      "id": "meadow:meadow_clearing",
-      "required": false
-    },
-    {
       "id": "eco:floating_river",
       "required": false
     },
@@ -84,6 +76,10 @@
     },
     {
       "id": "mysticsbiomes:lavender_meadow",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:lush_oasis",
       "required": false
     },
     {

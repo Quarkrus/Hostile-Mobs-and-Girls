@@ -7,10 +7,12 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:harpy"
+    "types": [
+      "hmag:harpy"
+    ]
   },
   "result": {
-    "item": "minecraft:feather",
-    "count": 2
+    "count": 2,
+    "item": "minecraft:feather"
   }
 }

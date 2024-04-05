@@ -6,12 +6,14 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 4,
   "entity": {
-    "type": "hmag:kasha"
+    "types": [
+      "hmag:kasha"
+    ]
   },
   "result": {
-    "fluid": "tconstruct:blazing_blood",
-    "amount": 20
-  },
-  "damage": 4
+    "amount": 20,
+    "fluid": "tconstruct:blazing_blood"
+  }
 }

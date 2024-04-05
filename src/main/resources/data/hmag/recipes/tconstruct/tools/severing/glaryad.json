@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:glaryad"
+    "types": [
+      "hmag:glaryad"
+    ]
   },
   "result": "minecraft:flowering_azalea"
 }

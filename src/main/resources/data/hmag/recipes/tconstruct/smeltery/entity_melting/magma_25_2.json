@@ -6,12 +6,14 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 2,
   "entity": {
-    "type": "hmag:melty_monster"
+    "types": [
+      "hmag:melty_monster"
+    ]
   },
   "result": {
-    "fluid": "tconstruct:magma",
-    "amount": 25
-  },
-  "damage": 2
+    "amount": 25,
+    "fluid": "tconstruct:magma"
+  }
 }
