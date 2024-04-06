@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:kobold"
+    "types": [
+      "hmag:kobold"
+    ]
   },
   "result": "hmag:kobold_leather"
 }

@@ -6,12 +6,14 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 4,
   "entity": {
-    "type": "hmag:jack_frost"
+    "types": [
+      "hmag:jack_frost"
+    ]
   },
   "result": {
-    "fluid": "minecraft:water",
-    "amount": 50
-  },
-  "damage": 4
+    "amount": 50,
+    "fluid": "minecraft:water"
+  }
 }

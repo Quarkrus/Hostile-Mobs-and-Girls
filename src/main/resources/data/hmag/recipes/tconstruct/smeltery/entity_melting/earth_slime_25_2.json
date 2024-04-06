@@ -6,12 +6,14 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 2,
   "entity": {
-    "type": "hmag:magical_slime"
+    "types": [
+      "hmag:magical_slime"
+    ]
   },
   "result": {
-    "fluid": "tconstruct:earth_slime",
-    "amount": 25
-  },
-  "damage": 2
+    "amount": 25,
+    "fluid": "tconstruct:earth_slime"
+  }
 }

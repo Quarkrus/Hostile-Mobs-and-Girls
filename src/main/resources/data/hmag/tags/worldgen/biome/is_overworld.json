@@ -83,6 +83,10 @@
       "required": false
     },
     {
+      "id": "mysticsbiomes:lush_oasis",
+      "required": false
+    },
+    {
       "id": "mysticsbiomes:strawberry_fields",
       "required": false
     },

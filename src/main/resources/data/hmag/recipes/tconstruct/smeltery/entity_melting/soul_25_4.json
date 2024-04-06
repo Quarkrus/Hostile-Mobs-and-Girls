@@ -6,12 +6,16 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 4,
   "entity": {
-    "type": "hmag:banshee"
+    "types": [
+      "hmag:banshee",
+      "hmag:jiangshi",
+      "hmag:giant_mummy"
+    ]
   },
   "result": {
-    "fluid": "tconstruct:liquid_soul",
-    "amount": 20
-  },
-  "damage": 4
+    "amount": 25,
+    "fluid": "tconstruct:liquid_soul"
+  }
 }
