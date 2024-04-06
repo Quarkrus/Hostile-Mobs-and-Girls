@@ -3,6 +3,10 @@
   "values": [
     "minecraft:bat",
     {
+      "id": "vampirism:blinding_bat",
+      "required": false
+    },
+    {
       "id": "spookybats:pumpkin_bat",
       "required": false
     },

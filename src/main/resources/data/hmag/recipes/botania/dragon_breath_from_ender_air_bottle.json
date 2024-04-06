@@ -2,16 +2,13 @@
   "type": "minecraft:crafting_shapeless",
   "conditions": [
     {
-      "type": "forge:not",
-      "value": {
-        "type": "forge:item_exists",
-        "item": "botania:ender_air_bottle"
-      }
+      "type": "forge:item_exists",
+      "item": "botania:ender_air_bottle"
     }
   ],
   "ingredients": [
     {
-      "item": "minecraft:glass_bottle"
+      "item": "botania:ender_air_bottle"
     },
     {
       "item": "hmag:ender_plasm"
