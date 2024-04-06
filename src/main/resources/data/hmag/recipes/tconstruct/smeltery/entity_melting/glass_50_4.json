@@ -6,6 +6,7 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 4,
   "entity": {
     "types": [
       "hmag:glaryad",
@@ -13,8 +14,7 @@
     ]
   },
   "result": {
-    "fluid": "tconstruct:molten_glass",
-    "amount": 50
-  },
-  "damage": 2
+    "amount": 50,
+    "fluid": "tconstruct:molten_glass"
+  }
 }

@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:spider_nest"
+    "types": [
+      "hmag:spider_nest"
+    ]
   },
   "result": "minecraft:cobweb"
 }

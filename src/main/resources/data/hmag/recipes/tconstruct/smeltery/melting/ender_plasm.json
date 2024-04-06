@@ -10,8 +10,8 @@
     "item": "hmag:ender_plasm"
   },
   "result": {
-    "fluid": "tconstruct:molten_ender",
-    "amount": 250
+    "amount": 250,
+    "fluid": "tconstruct:molten_ender"
   },
   "temperature": 477,
   "time": 49

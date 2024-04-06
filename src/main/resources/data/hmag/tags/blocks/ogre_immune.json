@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    "#minecraft:wither_immune"
+    "#minecraft:wither_immune",
+    "minecraft:spawner",
+    {
+      "id": "quark:monster_box",
+      "required": false
+    },
+    {
+      "id": "#lootr:containers",
+      "required": false
+    }
   ]
 }

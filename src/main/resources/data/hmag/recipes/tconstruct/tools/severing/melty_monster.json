@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:melty_monster"
+    "types": [
+      "hmag:melty_monster"
+    ]
   },
   "result": "minecraft:magma_cream"
 }

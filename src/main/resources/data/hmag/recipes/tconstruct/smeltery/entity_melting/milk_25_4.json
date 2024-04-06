@@ -6,12 +6,15 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 4,
   "entity": {
-    "type": "hmag:lich"
+    "types": [
+      "hmag:lich",
+      "hmag:necrotic_reaper"
+    ]
   },
   "result": {
-    "fluid": "minecraft:milk",
-    "amount": 25
-  },
-  "damage": 4
+    "amount": 25,
+    "fluid": "minecraft:milk"
+  }
 }

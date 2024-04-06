@@ -6,12 +6,14 @@
     }
   ],
   "type": "tconstruct:entity_melting",
+  "damage": 2,
   "entity": {
-    "type": "hmag:drowned_girl"
+    "types": [
+      "hmag:drowned_girl"
+    ]
   },
   "result": {
-    "fluid": "minecraft:water",
-    "amount": 20
-  },
-  "damage": 2
+    "amount": 20,
+    "fluid": "minecraft:water"
+  }
 }

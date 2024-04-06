@@ -7,7 +7,9 @@
   ],
   "type": "tconstruct:severing",
   "entity": {
-    "type": "hmag:giant_mummy"
+    "types": [
+      "hmag:giant_mummy"
+    ]
   },
   "result": "minecraft:paper"
 }
