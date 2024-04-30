@@ -26,10 +26,6 @@
       "required": false
     },
     {
-      "id": "meadow:meadow_clearing",
-      "required": false
-    },
-    {
       "id": "spawn:ant_gardens",
       "required": false
     },

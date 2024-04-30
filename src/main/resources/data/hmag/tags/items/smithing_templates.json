@@ -131,6 +131,10 @@
     {
       "id": "allthemodium:vibranium_upgrade_smithing_template",
       "required": false
+    },
+    {
+      "id": "forbidden_arcanus:darkstone_upgrade_smithing_template",
+      "required": false
     }
   ]
 }

@@ -10,14 +10,6 @@
     {
       "id": "#terralith:cliffs",
       "required": false
-    },
-    {
-      "id": "meadow:meadow_forest",
-      "required": false
-    },
-    {
-      "id": "meadow:meadow_clearing",
-      "required": false
     }
   ]
 }
