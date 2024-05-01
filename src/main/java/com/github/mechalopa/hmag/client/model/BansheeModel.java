@@ -80,7 +80,7 @@ public class BansheeModel<T extends AbstractFlyingMonsterEntity> extends Abstrac
 		ModClientUtils.addC(s1pd, cd, "body_ribbon_2", 24, 32, -0.5F, -2.5F, -1.0F, 3.0F, 5.0F, 1.0F, 0.0F, 0.0F, -1.75F, -0.25F);
 		PartDefinition headpd = pd.getChild("head");
 		PartDefinition h1pd = ModClientUtils.addC(headpd, cd, "hair_part_1", 32, 96, -4.0F, 0.0F, -1.0F, 8.0F, 5.0F, 1.0F, 0.0F, 0.0F, 4.0F);
-		ModClientUtils.addC(h1pd, cd, "hair_part_2", 32, 104, -6.0F, 0.0F, -1.0F, 12.0F, 10.0F, 1.0F, 0.0F, 5.0F, 0.0F);
+		ModClientUtils.addC(h1pd, cd, "hair_part_2", 32, 104, -5.0F, 0.0F, -1.0F, 10.0F, 11.0F, 1.0F, 0.0F, 5.0F, 0.0F);
 		PartDefinition rhp1pd = ModClientUtils.addC(headpd, cd, "right_hair_part_1", 40, 56, -1.0F, -1.0F, -1.0F, 2.0F, 3.0F, 2.0F, -3.75F, -7.0F, -1.0F);
 		PartDefinition rhp2pd = ModClientUtils.addC(rhp1pd, cd, "right_hair_part_2", 48, 64, -1.0F, -1.5F, -1.0F, 2.0F, 5.0F, 2.0F, -1.5F, 1.0F, 1.5F);
 		PartDefinition rhp3pd = ModClientUtils.addC(rhp2pd, cd, "right_hair_part_3", 40, 64, -1.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, 0.0F, 3.5F, 0.0F, 0.25F);

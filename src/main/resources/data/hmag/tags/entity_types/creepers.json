@@ -153,6 +153,10 @@
     {
       "id": "caverns_and_chasms:peeper",
       "required": false
+    },
+    {
+      "id": "arsmagicalegacy:mana_creeper",
+      "required": false
     }
   ]
 }
