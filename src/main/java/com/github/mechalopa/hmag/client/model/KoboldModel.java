@@ -162,16 +162,25 @@ public class KoboldModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 		this.rightLegPart2.xRot = 0.0F;
 		this.leftLegPart2.xRot = 0.0F;
 
+		this.rightEar.xRot = -((float)Math.PI / 36.0F);
+		this.leftEar.xRot = -((float)Math.PI / 36.0F);
+		this.rightEar.xRot += Mth.cos(ageInTicks * 0.048F + (float)Math.PI / 4.0F) * 0.045F;
+		this.leftEar.xRot += Mth.cos(ageInTicks * 0.048F + (float)Math.PI / 4.0F) * 0.045F;
+		this.rightEar.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
+		this.leftEar.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
 		this.rightEar.zRot = -((float)Math.PI / 20.0F);
-		this.rightEar.zRot += Mth.sin(ageInTicks * 0.04F) * 0.045F;
 		this.leftEar.zRot = (float)Math.PI / 20.0F;
-		this.leftEar.zRot += Mth.sin(ageInTicks * 0.04F) * -0.045F;
+		this.rightEar.zRot += Mth.sin(ageInTicks * 0.04F) * 0.045F;
+		this.leftEar.zRot -= Mth.sin(ageInTicks * 0.04F) * 0.045F;
+		this.rightEar.zRot -= Mth.sin(limbSwing * 0.6F + (float)Math.PI / 8.0F) * 0.072F * limbSwingAmount;
+		this.leftEar.zRot += Mth.sin(limbSwing * 0.6F + (float)Math.PI / 8.0F) * 0.072F * limbSwingAmount;
 
 		this.rightEarPart.zRot = (float)Math.PI / 30.0F;
 		this.leftEarPart.zRot = -((float)Math.PI / 30.0F);
 
 		this.tail1.xRot = (float)Math.PI * 2.0F / 5.0F;
 		this.tail1.xRot += Mth.sin(ageInTicks * 0.09F) * 0.3F;
+		this.tail1.xRot += Mth.sin(limbSwing * 0.9F) * 0.24F * limbSwingAmount;
 		this.tail1.yRot = Mth.cos(ageInTicks * 0.033F) * 0.36F;
 		this.tail2.xRot = (float)Math.PI / 12.0F;
 		this.tail2.xRot += Mth.sin(ageInTicks * 0.09F + (float)Math.PI / 8.0F) * 0.09F;

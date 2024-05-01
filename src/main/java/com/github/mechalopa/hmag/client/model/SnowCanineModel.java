@@ -174,18 +174,23 @@ public class SnowCanineModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 
 		this.rightEar.xRot = -((float)Math.PI / 32.0F);
 		this.leftEar.xRot = -((float)Math.PI / 32.0F);
-		this.rightEar.zRot += Mth.cos(ageInTicks * 0.033F + (float)Math.PI / 4.0F) * 0.045F;
-		this.leftEar.zRot += Mth.cos(ageInTicks * 0.033F + (float)Math.PI / 4.0F) * 0.045F;
+		this.rightEar.xRot += Mth.cos(ageInTicks * 0.048F + (float)Math.PI / 4.0F) * 0.045F;
+		this.leftEar.xRot += Mth.cos(ageInTicks * 0.048F + (float)Math.PI / 4.0F) * 0.045F;
+		this.rightEar.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
+		this.leftEar.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
 		this.rightEar.zRot = -((float)Math.PI / 36.0F);
-		this.rightEar.zRot += Mth.sin(ageInTicks * 0.04F) * 0.03F;
 		this.leftEar.zRot = (float)Math.PI / 36.0F;
-		this.leftEar.zRot += Mth.sin(ageInTicks * 0.04F) * -0.03F;
+		this.rightEar.zRot += Mth.sin(ageInTicks * 0.04F) * 0.03F;
+		this.leftEar.zRot -= Mth.sin(ageInTicks * 0.04F) * 0.03F;
+		this.rightEar.zRot -= Mth.sin(limbSwing * 0.6F + (float)Math.PI / 8.0F) * 0.072F * limbSwingAmount;
+		this.leftEar.zRot += Mth.sin(limbSwing * 0.6F + (float)Math.PI / 8.0F) * 0.072F * limbSwingAmount;
 
 		this.rightEarPart.zRot = 0.0F;
 		this.leftEarPart.zRot = 0.0F;
 
 		this.tail1.xRot = (float)Math.PI * 8.0F / 15.0F;
 		this.tail1.xRot += Mth.sin(ageInTicks * 0.09F) * 0.3F;
+		this.tail1.xRot += Mth.sin(limbSwing * 0.9F) * 0.24F * limbSwingAmount;
 		this.tail1.yRot = Mth.cos(ageInTicks * 0.033F) * 0.36F;
 		this.tail2.xRot = (float)Math.PI / 7.0F;
 		this.tail2.xRot += Mth.sin(ageInTicks * 0.09F + (float)Math.PI / 8.0F) * 0.024F;
