@@ -105,6 +105,18 @@
     {
       "id": "spookybats:spooky_oak_forest",
       "required": false
+    },
+    {
+      "id": "excessive_building:golden_birch_forest",
+      "required": false
+    },
+    {
+      "id": "excessive_building:maple_forest",
+      "required": false
+    },
+    {
+      "id": "excessive_building:snowy_maple_forest",
+      "required": false
     }
   ]
 }

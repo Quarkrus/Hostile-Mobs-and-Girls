@@ -136,10 +136,10 @@ public class ImpModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 			bodypd.addOrReplaceChild("left_skirt_part_" + k, cubelistbuilder1, pp1);
 		}
 
-		PartDefinition t1pd = ModClientUtils.addC(bodypd, cd, "tail_1", 12, 52, -0.5F, 0.0F, -1.0F, 1.0F, 3.0F, 1.0F, 0.0F, 9.5F, 1.5F);
-		PartDefinition t2pd = ModClientUtils.addC(t1pd, cd, "tail_2", 16, 52, -0.5F, 0.0F, -1.0F, 1.0F, 4.0F, 1.0F, 0.0F, 3.0F, 0.0F);
-		PartDefinition t3pd = ModClientUtils.addC(t2pd , cd, "tail_3", 20, 52, -0.5F, 0.0F, -1.0F, 1.0F, 4.0F, 1.0F, 0.0F, 4.0F, 0.0F);
-		ModClientUtils.addC(t3pd , cd, "tail_4", 24, 52, -1.5F, -1.5F, -1.0F, 3.0F, 3.0F, 1.0F, 0.0F, 2.75F, -0.001F);
+		PartDefinition t1pd = ModClientUtils.addC(bodypd, cd, "tail_1", 12, 52, -0.5F, 0.0F, -1.0F, 1.0F, 4.0F, 1.0F, 0.0F, 9.5F, 1.0F);
+		PartDefinition t2pd = ModClientUtils.addC(t1pd, cd, "tail_2", 16, 52, -0.5F, 0.0F, -1.0F, 1.0F, 4.0F, 1.0F, 0.0F, 4.0F, 0.0F);
+		PartDefinition t3pd = ModClientUtils.addC(t2pd , cd, "tail_3", 20, 52, -0.5F, 0.0F, -1.0F, 1.0F, 6.0F, 1.0F, 0.0F, 4.0F, 0.0F);
+		ModClientUtils.addC(t3pd , cd, "tail_4", 24, 52, -1.5F, -1.5F, -1.0F, 3.0F, 3.0F, 1.0F, 0.0F, 4.75F, -0.001F);
 		ModClientUtils.addC(bodypd, cd, "right_wing", 0, 60, -6.0F, -3.0F, 0.0F, 6.0F, 9.0F, 1.0F, -1.5F, 3.5F, 1.5F);
 		ModClientUtils.addC(bodypd, cd, "left_wing", 0, 60, 0.0F, -3.0F, 0.0F, 6.0F, 9.0F, 1.0F, 1.5F, 3.5F, 1.5F, true);
 		return md;
@@ -179,6 +179,8 @@ public class ImpModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 		this.leftFeelerPart1.xRot = (float)Math.PI / 8.0F;
 		this.rightFeelerPart1.xRot += Mth.sin(ageInTicks * 0.09F) * 0.072F;
 		this.leftFeelerPart1.xRot += Mth.sin(ageInTicks * 0.09F) * 0.072F;
+		this.rightFeelerPart1.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
+		this.leftFeelerPart1.xRot += Mth.sin(limbSwing * 0.6F) * 0.081F * limbSwingAmount;
 		this.rightFeelerPart2.xRot = -((float)Math.PI * 8.0F / 15.0F);
 		this.leftFeelerPart2.xRot = -((float)Math.PI * 8.0F / 15.0F);
 		this.rightFeelerPart3.xRot -= Mth.sin(ageInTicks * 0.09F + (float)Math.PI / 6.0F) * 0.105F;
@@ -191,6 +193,8 @@ public class ImpModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 		this.leftFeelerPart4.zRot = -((float)Math.PI / 5.0F);
 		this.rightFeelerPart4.zRot += Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.045F;
 		this.leftFeelerPart4.zRot -= Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.045F;
+		this.rightFeelerPart4.zRot += Mth.cos(limbSwing * 0.9F) * 0.09F * limbSwingAmount;
+		this.leftFeelerPart4.zRot -= Mth.cos(limbSwing * 0.9F) * 0.09F * limbSwingAmount;
 
 		this.rightEar.zRot = (float)Math.PI / 12.0F;
 		this.leftEar.zRot = -((float)Math.PI / 12.0F);
@@ -233,20 +237,29 @@ public class ImpModel<T extends Mob> extends AbstractAdvancedGirlModel<T>
 
 		this.tail1.xRot = (float)Math.PI * 2.0F / 5.0F;
 		this.tail1.xRot += Mth.sin(ageInTicks * 0.09F) * 0.15F;
+		this.tail1.xRot += Mth.sin(limbSwing * 0.9F) * 0.18F * limbSwingAmount;
+		this.tail1.yRot = Mth.cos(ageInTicks * 0.054F) * 0.42F;
 		this.tail1.zRot = Mth.cos(ageInTicks * 0.075F) * 0.21F;
+		this.tail1.zRot += Mth.sin(limbSwing * 0.6F + (float)Math.PI / 6.0F) * 0.24F * limbSwingAmount;
 		this.tail2.xRot = (float)Math.PI * 4.0F / 7.0F;
-		this.tail2.xRot -= Mth.sin(ageInTicks * 0.09F + (float)Math.PI / 3.0F) * 0.12F;
-		this.tail3.xRot = -((float)Math.PI / 5.0F);
-		this.tail3.xRot += Mth.sin(ageInTicks * 0.09F + (float)Math.PI * 2.0F / 3.0F) * 0.12F;
+		this.tail2.xRot -= Mth.sin(ageInTicks * 0.09F + (float)Math.PI / 3.0F) * 0.27F;
+		this.tail2.xRot -= Mth.sin(limbSwing * 0.6F + (float)Math.PI / 3.0F) * 0.21F * limbSwingAmount;
+		this.tail3.xRot = -((float)Math.PI * 3.0F / 7.0F);
+		this.tail3.xRot += Mth.sin(ageInTicks * 0.06F + (float)Math.PI * 2.0F / 3.0F) * 0.24F;
+		this.tail3.xRot += Mth.sin(limbSwing * 0.6F + (float)Math.PI * 2.0F / 3.0F) * 0.33F * limbSwingAmount;
 		this.tail4.zRot = (float)Math.PI / 4.0F;
 
 		this.rightWing.yRot = (float)Math.PI / 5.0F;
 		this.leftWing.yRot = -((float)Math.PI / 5.0F);
 		this.rightWing.yRot += Mth.cos(ageInTicks * 0.12F) * 0.096F;
 		this.leftWing.yRot -= Mth.cos(ageInTicks * 0.12F) * 0.096F;
+		this.rightWing.yRot += Mth.cos(limbSwing * 0.9F + (float)Math.PI / 3.0F) * 0.06F * limbSwingAmount;
+		this.leftWing.yRot -= Mth.cos(limbSwing * 0.9F + (float)Math.PI / 3.0F) * 0.06F * limbSwingAmount;
 		this.rightWing.zRot = (float)Math.PI / 16.0F;
 		this.leftWing.zRot = -((float)Math.PI / 16.0F);
-		this.rightWing.zRot += Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.045F;
-		this.leftWing.zRot -= Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.045F;
+		this.rightWing.zRot += Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.09F;
+		this.leftWing.zRot -= Mth.cos(ageInTicks * 0.12F + (float)Math.PI / 3.0F) * 0.09F;
+		this.rightWing.zRot += Mth.cos(limbSwing * 0.9F) * 0.09F * limbSwingAmount;
+		this.leftWing.zRot -= Mth.cos(limbSwing * 0.9F) * 0.09F * limbSwingAmount;
 	}
 }
