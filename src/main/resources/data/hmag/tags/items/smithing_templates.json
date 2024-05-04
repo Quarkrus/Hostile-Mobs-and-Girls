@@ -135,6 +135,18 @@
     {
       "id": "forbidden_arcanus:darkstone_upgrade_smithing_template",
       "required": false
+    },
+    {
+      "id": "epileson:epileson_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "makit_better:abyss_prismarine_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "makit_better:bio_titanium_upgrade_smithing_template",
+      "required": false
     }
   ]
 }
