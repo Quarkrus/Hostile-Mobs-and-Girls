@@ -50,9 +50,9 @@ public class InsomniaFruitItem extends Item implements ILevelItem
 			{
 				CompoundTag compoundnbt = stack.getOrCreateTag();
 				int itemLevel = !compoundnbt.contains(ILevelItem.LEVEL_KEY) ? 0 : (int)compoundnbt.getByte(ILevelItem.LEVEL_KEY);
-				ServerStatsCounter serverstatisticsmanager = ((ServerPlayer)entity).getStats();
+				ServerStatsCounter serverstatscounter = ((ServerPlayer)entity).getStats();
 				final int i = 24000;
-				final int j = Math.max(serverstatisticsmanager.getValue(Stats.CUSTOM.get(Stats.TIME_SINCE_REST)), 1);
+				final int j = Mth.clamp(serverstatscounter.getValue(Stats.CUSTOM.get(Stats.TIME_SINCE_REST)), 1, Integer.MAX_VALUE);
 				int k = j / i;
 				k = Mth.clamp(k - 2, 0, 5);
 

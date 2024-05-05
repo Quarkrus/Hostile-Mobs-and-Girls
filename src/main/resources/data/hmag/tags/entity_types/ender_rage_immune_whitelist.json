@@ -3,6 +3,10 @@
   "values": [
     "#forge:endermen",
     {
+      "id": "#c:endermen",
+      "required": false
+    },
+    {
       "id": "alexsmobs:spectre",
       "required": false
     },

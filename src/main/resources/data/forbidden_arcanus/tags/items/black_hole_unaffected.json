@@ -1,10 +1,8 @@
 {
   "replace": false,
   "values": [
+    "#hmag:reinforced_blocks",
     "hmag:nether_star_block",
-    "hmag:reinforced_block",
-    "hmag:reinforced_glass",
-    "hmag:tinted_reinforced_glass",
     "hmag:nether_star_fragment"
   ]
 }
