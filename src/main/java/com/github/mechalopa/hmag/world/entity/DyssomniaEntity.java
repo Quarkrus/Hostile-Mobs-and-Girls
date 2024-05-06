@@ -3,6 +3,7 @@ package com.github.mechalopa.hmag.world.entity;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.EnumSet;
+import java.util.function.Predicate;
 
 import javax.annotation.Nonnull;
 
@@ -24,14 +25,18 @@ import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.stats.ServerStatsCounter;
+import net.minecraft.stats.Stats;
 import net.minecraft.util.Mth;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityDimensions;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.FlyingMob;
@@ -275,8 +280,40 @@ public class DyssomniaEntity extends FlyingMob implements Enemy
 
 	public static boolean checkDyssomniaSpawnRules(EntityType<DyssomniaEntity> type, ServerLevelAccessor levelAccessor, MobSpawnType spawnType, BlockPos pos, RandomSource random)
 	{
-		return ModSpawnRules.checkMobSpawnInLightRules(type, levelAccessor, spawnType, pos, random) && (spawnType == MobSpawnType.SPAWNER || (levelAccessor.canSeeSky(pos) && random.nextFloat() < levelAccessor.getMoonBrightness()));
+		if (ModSpawnRules.checkMobSpawnInLightRules(type, levelAccessor, spawnType, pos, random))
+		{
+			if (spawnType == MobSpawnType.SPAWNER)
+			{
+				return true;
+			}
+			else if (levelAccessor.canSeeSky(pos))
+			{
+				Player player = levelAccessor.getNearestPlayer((double)pos.getX() + 0.5D, (double)pos.getY() + 0.5D, (double)pos.getZ() + 0.5D, 144.0D, DyssomniaEntity.INSOMNIA);
+				return player != null;
+			}
+			else
+			{
+				return false;
+			}
+		}
+		else
+		{
+			return false;
+		}
 	}
+
+	public static final Predicate<Entity> INSOMNIA = (p) -> {
+		if (p instanceof ServerPlayer && !p.isSpectator() && !((ServerPlayer)p).isCreative())
+		{
+			ServerStatsCounter serverstatscounter = ((ServerPlayer)p).getStats();
+			int i = Mth.clamp(serverstatscounter.getValue(Stats.CUSTOM.get(Stats.TIME_SINCE_REST)), 1, Integer.MAX_VALUE);
+			return p.level().getRandom().nextInt(i) >= 72000;
+		}
+		else
+		{
+			return false;
+		}
+	};
 
 	public DyssomniaEntity.AttackPhase getAttackPhase()
 	{
