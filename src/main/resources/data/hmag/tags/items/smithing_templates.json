@@ -147,6 +147,10 @@
     {
       "id": "makit_better:bio_titanium_upgrade_smithing_template",
       "required": false
+    },
+    {
+      "id": "deep_aether:stratus_smithing_template",
+      "required": false
     }
   ]
 }
