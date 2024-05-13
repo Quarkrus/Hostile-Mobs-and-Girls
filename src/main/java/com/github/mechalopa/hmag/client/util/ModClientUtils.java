@@ -18,7 +18,10 @@ import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.client.renderer.item.ClampedItemPropertyFunction;
 import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.util.Mth;
+import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.animal.Sheep;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
@@ -169,5 +172,18 @@ public class ModClientUtils
 		part.xScale = 1.0F + scale;
 		part.yScale = 1.0F - scale;
 		part.zScale = 1.0F + scale;
+	}
+
+	public static float[] getRainbowColors(Entity entity, float partialTicks)
+	{
+		final int i = entity.tickCount / 25 + entity.getId();
+		final int j = DyeColor.values().length;
+		final int k = i % j;
+		final int l = (i + 1) % j;
+		final float f = ((float)(entity.tickCount % 25) + partialTicks) / 25.0F;
+		final float[] afloat1 = Sheep.getColorArray(DyeColor.byId(k));
+		final float[] afloat2 = Sheep.getColorArray(DyeColor.byId(l));
+		final float[] afloat3 = {afloat1[0] * (1.0F - f) + afloat2[0] * f, afloat1[1] * (1.0F - f) + afloat2[1] * f, afloat1[2] * (1.0F - f) + afloat2[2] * f};
+		return afloat3;
 	}
 }

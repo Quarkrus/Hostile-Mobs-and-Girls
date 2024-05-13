@@ -1,5 +1,6 @@
 package com.github.mechalopa.hmag.client.renderer.layers;
 
+import com.github.mechalopa.hmag.client.util.ModClientUtils;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 
@@ -49,7 +50,25 @@ public abstract class AbstractClothingLayer<T extends LivingEntity, M extends En
 					vertexconsumer = buffer.getBuffer(RenderType.entityTranslucent(resourcelocation));
 				}
 
-				entitymodel.renderToBuffer(poseStack, vertexconsumer, packedLight, LivingEntityRenderer.getOverlayCoords(livingEntity, 0.0F), this.getR(livingEntity), this.getG(livingEntity), this.getB(livingEntity), this.getAlpha(livingEntity));
+				float f;
+				float f1;
+				float f2;
+
+				if (this.isRainbow(livingEntity))
+				{
+					float[] afloat = ModClientUtils.getRainbowColors(livingEntity, partialTicks);
+					f = afloat[0];
+					f1 = afloat[1];
+					f2 = afloat[2];
+				}
+				else
+				{
+					f = this.getR(livingEntity);
+					f1 = this.getG(livingEntity);
+					f2 = this.getB(livingEntity);
+				}
+
+				entitymodel.renderToBuffer(poseStack, vertexconsumer, packedLight, LivingEntityRenderer.getOverlayCoords(livingEntity, 0.0F), f, f1, f2, this.getAlpha(livingEntity));
 			}
 		}
 	}
@@ -77,6 +96,11 @@ public abstract class AbstractClothingLayer<T extends LivingEntity, M extends En
 	protected float getAlpha(T livingEntity)
 	{
 		return 1.0F;
+	}
+
+	protected boolean isRainbow(T livingEntity)
+	{
+		return false;
 	}
 
 	protected abstract ResourceLocation getLayerTexture(T livingEntity);

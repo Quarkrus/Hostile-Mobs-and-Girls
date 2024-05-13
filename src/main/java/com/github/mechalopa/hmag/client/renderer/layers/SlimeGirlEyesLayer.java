@@ -50,6 +50,12 @@ public class SlimeGirlEyesLayer extends AbstractClothingLayer<SlimeGirlEntity, S
 	}
 
 	@Override
+	protected boolean isRainbow(SlimeGirlEntity entity)
+	{
+		return SlimeGirlOuterLayer.isRainbowName(entity);
+	}
+
+	@Override
 	protected EntityModel<SlimeGirlEntity> getLayerModel()
 	{
 		return this.model;

@@ -9,6 +9,7 @@ import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.renderer.entity.RenderLayerParent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
@@ -47,6 +48,17 @@ public class SlimeGirlOuterLayer extends AbstractClothingLayer<SlimeGirlEntity, 
 	protected float getAlpha(SlimeGirlEntity entity)
 	{
 		return 0.5F;
+	}
+
+	@Override
+	protected boolean isRainbow(SlimeGirlEntity entity)
+	{
+		return SlimeGirlOuterLayer.isRainbowName(entity);
+	}
+
+	public static boolean isRainbowName(Entity entity)
+	{
+		return entity.hasCustomName() && "RAINBOW_GIRL".equals(entity.getName().getString());
 	}
 
 	@Override

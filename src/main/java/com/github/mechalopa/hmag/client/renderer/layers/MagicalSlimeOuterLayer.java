@@ -2,6 +2,7 @@ package com.github.mechalopa.hmag.client.renderer.layers;
 
 import com.github.mechalopa.hmag.client.ModModelLayers;
 import com.github.mechalopa.hmag.client.model.MagicalSlimeModel;
+import com.github.mechalopa.hmag.client.util.ModClientUtils;
 import com.github.mechalopa.hmag.world.entity.MagicalSlimeEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -52,15 +53,28 @@ public class MagicalSlimeOuterLayer<T extends LivingEntity> extends RenderLayer<
 			this.model.prepareMobModel(livingEntity, limbSwing, limbSwingAmount, partialTicks);
 			this.model.setupAnim(livingEntity, limbSwing, limbSwingAmount, ageInTicks, netHeadYaw, headPitch);
 
+			float f = 1.0F;
+			float f1 = 1.0F;
+			float f2 = 1.0F;
+
 			if (livingEntity instanceof MagicalSlimeEntity)
 			{
-				float[] afloat = ((MagicalSlimeEntity)livingEntity).getColors();
-				this.model.renderToBuffer(poseStack, vertexconsumer, packedLight, LivingEntityRenderer.getOverlayCoords(livingEntity, 0.0F), afloat[0], afloat[1], afloat[2], 1.0F);
+				if (SlimeGirlOuterLayer.isRainbowName(livingEntity))
+				{
+					float[] afloat = ModClientUtils.getRainbowColors(livingEntity, partialTicks);
+					f = afloat[0];
+					f1 = afloat[1];
+					f2 = afloat[2];
+				}
+				else
+				{
+					f = (((MagicalSlimeEntity)livingEntity).getColors())[0];
+					f1 = (((MagicalSlimeEntity)livingEntity).getColors())[1];
+					f2 = (((MagicalSlimeEntity)livingEntity).getColors())[2];
+				}
 			}
-			else
-			{
-				this.model.renderToBuffer(poseStack, vertexconsumer, packedLight, LivingEntityRenderer.getOverlayCoords(livingEntity, 0.0F), 1.0F, 1.0F, 1.0F, 1.0F);
-			}
+
+			this.model.renderToBuffer(poseStack, vertexconsumer, packedLight, LivingEntityRenderer.getOverlayCoords(livingEntity, 0.0F), f, f1, f2, 1.0F);
 		}
 	}
 }
