@@ -4,6 +4,10 @@
     {
       "id": "#forge:is_water",
       "required": false
+    },
+    {
+      "id": "mysticsbiomes:lagoon",
+      "required": false
     }
   ]
 }

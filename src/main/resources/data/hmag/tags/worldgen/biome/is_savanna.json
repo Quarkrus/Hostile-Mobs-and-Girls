@@ -15,19 +15,11 @@
       "required": false
     },
     {
-      "id": "terralith:fractured_savanna",
-      "required": false
-    },
-    {
       "id": "terralith:hot_shrubland",
       "required": false
     },
     {
       "id": "terralith:savanna_badlands",
-      "required": false
-    },
-    {
-      "id": "terralith:savanna_slopes",
       "required": false
     },
     {

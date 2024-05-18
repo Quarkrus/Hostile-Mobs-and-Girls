@@ -137,6 +137,26 @@
       "required": false
     },
     {
+      "id": "aether_treasure_reforging:neptune_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "aether_treasure_reforging:phoenix_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "aether_treasure_reforging:valkyrie_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "chromaticarsenal:chromatic_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "deep_aether:stratus_smithing_template",
+      "required": false
+    },
+    {
       "id": "epileson:epileson_upgrade_smithing_template",
       "required": false
     },
@@ -146,10 +166,6 @@
     },
     {
       "id": "makit_better:bio_titanium_upgrade_smithing_template",
-      "required": false
-    },
-    {
-      "id": "deep_aether:stratus_smithing_template",
       "required": false
     }
   ]

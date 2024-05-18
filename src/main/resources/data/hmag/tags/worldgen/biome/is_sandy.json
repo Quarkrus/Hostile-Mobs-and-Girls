@@ -20,6 +20,10 @@
     {
       "id": "biox:sandstony_shore",
       "required": false
+    },
+    {
+      "id": "mysticsbiomes:lush_oasis",
+      "required": false
     }
   ]
 }

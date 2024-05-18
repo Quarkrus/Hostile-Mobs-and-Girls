@@ -25,15 +25,7 @@
       "required": false
     },
     {
-      "id": "terralith:mirage_isles",
-      "required": false
-    },
-    {
       "id": "alexscaves:forlorn_hollows",
-      "required": false
-    },
-    {
-      "id": "alexscaves:primordial_caves",
       "required": false
     },
     {
@@ -50,6 +42,14 @@
     },
     {
       "id": "wythers:deep_dark_incursion",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:lagoon",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:lavender_meadow",
       "required": false
     }
   ]
