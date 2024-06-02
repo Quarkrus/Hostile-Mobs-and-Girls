@@ -1,0 +1,17 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "extradelight"
+    }
+  ],
+  "type": "extradelight:mortar",
+  "grinds": 4,
+  "ingredient": {
+    "item": "hmag:soul_powder"
+  },
+  "result": {
+    "count": 1,
+    "item": "minecraft:light_blue_dye"
+  }
+}
