@@ -157,6 +157,78 @@
     {
       "id": "arsmagicalegacy:mana_creeper",
       "required": false
+    },
+    {
+      "id": "#takumicraft:takumi",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:celebration_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:cookie_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:dark_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:earth_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:electric_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:fake_illusion_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:fire_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:ice_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:illusion_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:ghost_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:light_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:magma_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:psychic_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:reverse_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:spider_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:water_creeper",
+      "required": false
+    },
+    {
+      "id": "elementalcreepers:friendly_creeper",
+      "required": false
     }
   ]
 }

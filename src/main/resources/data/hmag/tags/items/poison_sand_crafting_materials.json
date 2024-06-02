@@ -14,6 +14,10 @@
     {
       "id": "evilcraft:poison_sac",
       "required": false
+    },
+    {
+      "id": "mowziesmobs:naga_fang",
+      "required": false
     }
   ]
 }

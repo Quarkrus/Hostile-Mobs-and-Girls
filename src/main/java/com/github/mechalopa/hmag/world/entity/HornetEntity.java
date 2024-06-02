@@ -37,6 +37,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 public class HornetEntity extends AbstractFlyingMonsterEntity
 {
@@ -145,6 +147,12 @@ public class HornetEntity extends AbstractFlyingMonsterEntity
 	protected float getStandingEyeHeight(Pose pose, EntityDimensions size)
 	{
 		return 1.52F;
+	}
+
+	@OnlyIn(Dist.CLIENT)
+	public boolean isAngrySkin()
+	{
+		return this.isAlive() && (this.isAggressive() || this.getAttackPhase() != 0);
 	}
 
 	@Override
