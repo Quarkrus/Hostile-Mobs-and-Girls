@@ -93,6 +93,18 @@
     {
       "id": "eldritch_end:dendler",
       "required": false
+    },
+    {
+      "id": "dragonmounts:dragon",
+      "required": false
+    },
+    {
+      "id": "dmr:dragon",
+      "required": false
+    },
+    {
+      "id": "endertrigon:baby_ender_dragon",
+      "required": false
     }
   ]
 }
