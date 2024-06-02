@@ -43,6 +43,14 @@
     {
       "id": "wythers:deep_dark_incursion",
       "required": false
+    },
+    {
+      "id": "mysticsbiomes:lagoon",
+      "required": false
+    },
+    {
+      "id": "mysticsbiomes:lavender_meadow",
+      "required": false
     }
   ]
 }

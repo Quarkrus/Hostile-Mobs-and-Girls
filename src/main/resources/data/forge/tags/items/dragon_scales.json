@@ -20,6 +20,10 @@
     {
       "id": "dragonloot:dragon_scale",
       "required": false
+    },
+    {
+      "id": "makit_better:ender_scale",
+      "required": false
     }
   ]
 }
