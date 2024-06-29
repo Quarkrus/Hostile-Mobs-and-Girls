@@ -4,11 +4,7 @@
     "#hmag:curse_remove_templates",
     "#hmag:smithing_templates",
     {
-      "id": "endreborn:curious_relic",
-      "required": false
-    },
-    {
-      "id": "endreborn:mysterious_relic",
+      "id": "tolaserblade:lb_blueprint",
       "required": false
     }
   ]

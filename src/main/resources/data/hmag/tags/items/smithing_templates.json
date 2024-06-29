@@ -167,6 +167,22 @@
     {
       "id": "makit_better:bio_titanium_upgrade_smithing_template",
       "required": false
+    },
+    {
+      "id": "crockpot:pot_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "endreborn:curious_upgrade_template",
+      "required": false
+    },
+    {
+      "id": "endreborn:mysterious_upgrade_template",
+      "required": false
+    },
+    {
+      "id": "spartanweaponry:quiver_compartment",
+      "required": false
     }
   ]
 }
