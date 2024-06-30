@@ -3,11 +3,23 @@
   "values": [
     "minecraft:fortress",
     {
+      "id": "repurposed_structures:city_nether",
+      "required": false
+    },
+    {
       "id": "repurposed_structures:stronghold_nether",
       "required": false
     },
     {
       "id": "betterfortresses:fortress",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_keep",
+      "required": false
+    },
+    {
+      "id": "nova_structures:nether_port",
       "required": false
     }
   ]
