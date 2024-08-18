@@ -87,6 +87,10 @@
       "required": false
     },
     {
+      "id": "mysticsbiomes:tropics",
+      "required": false
+    },
+    {
       "id": "snifferplus:timeless_grotto",
       "required": false
     },

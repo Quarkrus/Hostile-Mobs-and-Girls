@@ -81,6 +81,10 @@
     {
       "id": "atmospheric:kousa_jungle",
       "required": false
+    },
+    {
+      "id": "biomeswevegone:crag_gardens",
+      "required": false
     }
   ]
 }

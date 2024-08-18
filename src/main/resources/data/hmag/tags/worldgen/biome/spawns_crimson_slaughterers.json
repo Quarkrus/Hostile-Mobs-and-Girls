@@ -3,10 +3,6 @@
   "values": [
     "minecraft:crimson_forest",
     {
-      "id": "byg:crimson_gardens",
-      "required": false
-    },
-    {
       "id": "gardens_of_the_dead:whistling_woods",
       "required": false
     }

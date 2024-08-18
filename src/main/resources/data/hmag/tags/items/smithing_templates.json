@@ -57,7 +57,7 @@
       "required": false
     },
     {
-      "id": "epicsamurai:spirit_upgrade_smithing_template",
+      "id": "samurai_dynasty:spirit_upgrade_smithing_template",
       "required": false
     },
     {
@@ -81,7 +81,7 @@
       "required": false
     },
     {
-      "id": "leatheredboots:leather_upgrade_smithing_template",
+      "id": "leathered_boots:leather_upgrade_smithing_template",
       "required": false
     },
     {
@@ -182,6 +182,22 @@
     },
     {
       "id": "spartanweaponry:quiver_compartment",
+      "required": false
+    },
+    {
+      "id": "aethergearexpansion:aetherite_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minervillager:amethyst_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minervillager:empowered_iron_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "minervillager:emerald_upgrade_smithing_template",
       "required": false
     }
   ]

@@ -4,10 +4,6 @@
     "minecraft:end_barrens",
     "minecraft:small_end_islands",
     {
-      "id": "byg:viscal_isles",
-      "required": false
-    },
-    {
       "id": "nullscape:crystal_peaks",
       "required": false
     }
