@@ -6,6 +6,10 @@
     {
       "id": "ends_delight:dragon_tooth",
       "required": false
+    },
+    {
+      "id": "irons_spellbooks:dragonskin",
+      "required": false
     }
   ]
 }

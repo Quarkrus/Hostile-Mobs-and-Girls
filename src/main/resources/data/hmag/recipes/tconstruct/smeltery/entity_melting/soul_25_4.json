@@ -9,8 +9,8 @@
   "damage": 4,
   "entity": {
     "types": [
+      "hmag:cursed_doll",
       "hmag:banshee",
-      "hmag:jiangshi",
       "hmag:giant_mummy"
     ]
   },

@@ -134,10 +134,10 @@ public class FortressKeeperModel<T extends FortressKeeperEntity> extends Hierarc
 		ModClientUtils.addC(lap4pd, "left_arm_part_5d", 96, 48, -1.0F, 0.0F, -1.0F, 2.0F, 3.0F, 2.0F, -3.0F, 5.0F, 3.0F, true);
 		CubeListBuilder cubelistbuilder = CubeListBuilder.create().texOffs(40, 64).addBox(-2.5F, -1.0F, -2.5F, 5.0F, 3.0F, 5.0F);
 		CubeListBuilder cubelistbuilder1 = CubeListBuilder.create().texOffs(40, 64).mirror().addBox(-2.5F, -1.0F, -2.5F, 5.0F, 3.0F, 5.0F);
-		PartDefinition l1pd = pd.addOrReplaceChild("leg_1", cubelistbuilder, PartPose.offset(-3.5F, 16.25F, 3.5F));
-		PartDefinition l2pd = pd.addOrReplaceChild("leg_2", cubelistbuilder1, PartPose.offset(3.5F, 16.25F, 3.5F));
-		PartDefinition l3pd = pd.addOrReplaceChild("leg_3", cubelistbuilder, PartPose.offset(-3.5F, 16.25F, -3.5F));
-		PartDefinition l4pd = pd.addOrReplaceChild("leg_4", cubelistbuilder1, PartPose.offset(3.5F, 16.25F, -3.5F));
+		PartDefinition l1pd = pd.addOrReplaceChild("leg_1", cubelistbuilder, PartPose.offset(-4.5F, 16.25F, 4.0F));
+		PartDefinition l2pd = pd.addOrReplaceChild("leg_2", cubelistbuilder1, PartPose.offset(4.5F, 16.25F, 4.0F));
+		PartDefinition l3pd = pd.addOrReplaceChild("leg_3", cubelistbuilder, PartPose.offset(-4.5F, 16.25F, -4.0F));
+		PartDefinition l4pd = pd.addOrReplaceChild("leg_4", cubelistbuilder1, PartPose.offset(4.5F, 16.25F, -4.0F));
 		CubeListBuilder cubelistbuilder2 = CubeListBuilder.create().texOffs(42, 72).addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F);
 		CubeListBuilder cubelistbuilder3 = CubeListBuilder.create().texOffs(42, 72).mirror().addBox(-2.0F, 0.0F, -2.0F, 4.0F, 6.0F, 4.0F);
 		PartPose pp = PartPose.offset(0.0F, 2.0F, 0.0F);
@@ -176,7 +176,7 @@ public class FortressKeeperModel<T extends FortressKeeperEntity> extends Hierarc
 		this.leg3.xRot = Mth.cos(limbSwing * 0.6662F + (float)Math.PI) * 1.2F * limbSwingAmount;
 		this.leg4.xRot = Mth.cos(limbSwing * 0.6662F) * 1.2F * limbSwingAmount;
 
-		float f = 0.09F;
+		float f = 0.081F;
 
 		this.leg1.zRot = f;
 		this.leg2.zRot = -f;
