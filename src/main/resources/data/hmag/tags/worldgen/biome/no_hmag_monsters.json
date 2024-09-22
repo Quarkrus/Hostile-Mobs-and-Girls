@@ -59,6 +59,10 @@
     {
       "id": "mysticsbiomes:lavender_meadow",
       "required": false
+    },
+    {
+      "id": "mysticsbiomes:tropics",
+      "required": false
     }
   ]
 }

@@ -9,6 +9,22 @@
     {
       "id": "betterdeserttemples:desert_temple",
       "required": false
+    },
+    {
+      "id": "additionalstructures:pyramid_dungeon",
+      "required": false
+    },
+    {
+      "id": "dungeons_enhanced:desert_temple",
+      "required": false
+    },
+    {
+      "id": "philipsruins:desert_structures",
+      "required": false
+    },
+    {
+      "id": "nova_structures:desert_ruins",
+      "required": false
     }
   ]
 }

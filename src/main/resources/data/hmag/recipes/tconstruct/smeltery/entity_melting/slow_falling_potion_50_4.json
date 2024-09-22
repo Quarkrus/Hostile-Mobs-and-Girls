@@ -6,15 +6,17 @@
     }
   ],
   "type": "tconstruct:entity_melting",
-  "damage": 2,
+  "damage": 4,
   "entity": {
     "types": [
-      "hmag:ghost",
-      "hmag:wither_ghost"
+      "hmag:dyssomnia"
     ]
   },
   "result": {
-    "amount": 25,
-    "fluid": "tconstruct:liquid_soul"
+    "amount": 50,
+    "fluid": "tconstruct:potion",
+    "nbt": {
+      "Potion": "minecraft:slow_falling"
+    }
   }
 }

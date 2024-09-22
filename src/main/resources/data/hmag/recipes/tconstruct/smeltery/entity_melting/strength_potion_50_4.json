@@ -6,14 +6,17 @@
     }
   ],
   "type": "tconstruct:entity_melting",
-  "damage": 2,
+  "damage": 4,
   "entity": {
     "types": [
-      "hmag:drowned_girl"
+      "hmag:ogre"
     ]
   },
   "result": {
-    "amount": 20,
-    "fluid": "minecraft:water"
+    "amount": 50,
+    "fluid": "tconstruct:potion",
+    "nbt": {
+      "Potion": "minecraft:strength"
+    }
   }
 }
