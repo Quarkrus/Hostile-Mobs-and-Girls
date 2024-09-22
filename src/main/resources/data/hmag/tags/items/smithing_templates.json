@@ -199,6 +199,18 @@
     {
       "id": "minervillager:emerald_upgrade_smithing_template",
       "required": false
+    },
+    {
+      "id": "big_swords:ender_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "musketmod:musket_upgrade_smithing_template",
+      "required": false
+    },
+    {
+      "id": "randomisfits:zurite_upgrade_smithing_template",
+      "required": false
     }
   ]
 }

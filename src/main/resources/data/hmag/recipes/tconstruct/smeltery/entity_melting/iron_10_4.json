@@ -6,15 +6,15 @@
     }
   ],
   "type": "tconstruct:entity_melting",
-  "damage": 2,
+  "damage": 4,
   "entity": {
     "types": [
-      "hmag:ghost",
-      "hmag:wither_ghost"
+      "hmag:zombie_girl",
+      "hmag:husk_girl"
     ]
   },
   "result": {
-    "amount": 25,
+    "amount": 10,
     "fluid": "tconstruct:liquid_soul"
   }
 }

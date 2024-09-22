@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "pigsteel:waxed_corrupted_pigsteel_lantern"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "pigsteel:waxed_corrupted_pigsteel_soul_lantern"
+    }
+  ],
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pigsteel:waxed_corrupted_pigsteel_lantern"
+    },
+    {
+      "item": "hmag:soul_powder"
+    }
+  ],
+  "result": {
+    "item": "pigsteel:waxed_corrupted_pigsteel_soul_lantern"
+  }
+}
