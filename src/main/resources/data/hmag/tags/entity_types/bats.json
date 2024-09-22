@@ -89,6 +89,10 @@
     {
       "id": "spookybats:biggest_fan_bat",
       "required": false
+    },
+    {
+      "id": "goety:vampire_bat",
+      "required": false
     }
   ]
 }

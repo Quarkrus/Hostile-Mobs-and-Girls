@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "conditions": [
+    {
+      "type": "forge:item_exists",
+      "item": "autumnity:large_jack_o_lantern_slice"
+    },
+    {
+      "type": "forge:item_exists",
+      "item": "autumnity:large_soul_jack_o_lantern_slice"
+    }
+  ],
+  "ingredients": [
+    {
+      "item": "autumnity:large_jack_o_lantern_slice"
+    },
+    {
+      "item": "hmag:soul_powder"
+    }
+  ],
+  "result": {
+    "item": "autumnity:large_soul_jack_o_lantern_slice"
+  }
+}

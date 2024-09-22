@@ -33,6 +33,10 @@
     {
       "id": "xtraarrows:bat_skin",
       "required": false
+    },
+    {
+      "id": "actuallyadditions:bats_wing",
+      "required": false
     }
   ]
 }
